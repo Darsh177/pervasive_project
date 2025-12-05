@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "877834790708",
+    "project_id": "smart-door-6e61f",
+    "storage_bucket": "smart-door-6e61f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877834790708:android:404263259ef876f6fba761",
+        "android_client_info": {
+          "package_name": "com.example.pervasiveproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX7p2Sw-j-4zgjyPX29gTNQaszVa_7yHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

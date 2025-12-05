@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="#F5F5F5">
 
-    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -19,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!-- Menu Button -->
             <ImageButton
                 android:id="@+id/btn_menu"
                 android:layout_width="48dp"
@@ -41,7 +39,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <!-- Info Icon -->
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
@@ -55,7 +52,6 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Lock Status Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,7 +97,6 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Logs Title -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -113,24 +108,25 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <!-- Logs Container -->
     <LinearLayout
         android:id="@+id/container_logs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp">
 
-        <!-- Sample log items (replace with RecyclerView later) -->
-        <include layout="@layout/item_log" />
-        <include layout="@layout/item_log" />
-        <include layout="@layout/item_log" />
+        <!-- RecyclerView for logs -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_logs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="ifContentScrolls" />
 
     </LinearLayout>
 
-    <!-- Add New User Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_add_user"
         android:layout_width="match_parent"
