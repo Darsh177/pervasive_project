@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">pervasive project</string>
+    <string name="app_name">Smart Access</string>
+    <string name="menu">Menu</string>
+    <string name="info">Info</string>
+    <string name="lock_status">Lock status</string>
+    <string name="door_locked">Door Locked</string>
+    <string name="open_door">Open Door</string>
+    <string name="access_logs">Access Logs</string>
+    <string name="add_new_user">Add New User</string>
+    <string name="door_unlocked">Door Unlocked</string>
+    <string name="close_door">Close Door</string>
 </resources>
